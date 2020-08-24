@@ -45,7 +45,7 @@
 					<header>
 						<h2>Olá!</h2>
 					</header>
-					<p>Seja bem-vindo(a) à <strong>Montemaq,</strong> sua solução para <strong>metalmecânica!</strong><br />
+					<p>Seja bem-vindo(a) à <strong>LF Segurança e Engenharia Ocupacional,</strong> segurança do trabalho é <strong>essencial!</strong><br />
 					<strong>Conheça</strong> nossos <strong>serviços!</strong></p>
 					<footer>
 						<a href="#empresa" class="button style2 down">Mais</a>
@@ -59,7 +59,7 @@
 					<header>
 						<h2>A Empresa!</h2>
 					</header>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <strong>tempor incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 				</div>
 				<a href="#quemsomos" class="button style2 down anchored">Next</a>
 			</section>
@@ -70,7 +70,7 @@
 					<header>
 						<h2>Quem somos</h2>
 					</header>
-					<p>Fundanda por dois irmãos empreendedores, resolveram iniciar a Montemaq...</p>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <strong>tempor incididunt ut labore et dolore</strong> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 				</div>
 				<a href="#blog" class="button style2 down anchored">Next</a>
 			</section>
@@ -79,9 +79,9 @@
 			<section id="blog" class="main style3 primary">
 				<div class="content">
 					<header>
-						<h2>Nossos Serviços</h2>
-						<p>Serviços de metalmecânica para diversos empreendimentos, ajustamos tudo sua necessidade. Atendemos con <strong>excelência</strong> e <strong>profissionalismo</strong></p>
-						<p>Confira nosso ambiente:</p>
+						<h2>Blog</h2>
+						<p>Relátórios CAT, CCAT, XGP, ROG. Tudo para sua segurança. Atendemos con <strong>excelência</strong> e <strong>profissionalismo</strong></p>
+						<p>Fique por dentro!</p>
 					</header>
 
 					<!-- SnapWidget -->
@@ -125,13 +125,25 @@
 						<p>Ou, preencha o formulário abaixo!</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
+						<form method="post" action="form.php">
 							<div class="fields">
-								<div class="field half"><input type="text" aria-label="Nome" name="name" placeholder="Nome" /></div>
-								<div class="field half"><input type="email" aria-label="Email" name="email" placeholder="Email" /></div>
-								<div class="field half"><input type="email" aria-label="Email" name="email" placeholder="Email" /></div>
 								<div class="field half">
-									<select aria-label="Email" name="email" placeholder="Email">
+									<input type="text" aria-label="name" name="name" id="name" placeholder="Nome" required/>
+								</div>
+								<div class="field half">
+									<input type="text" aria-label="email" name="email" id="email" placeholder="Email" required/>
+								</div>
+								<div class="field half">
+									<input type="text" aria-label="name" name="name" id="name" placeholder="Nome da Empresa (Opcional)"/>
+								</div>
+								<div class="field half">
+									<input type="text" aria-label="name" name="name" id="name" placeholder="CNPJ (Opcional)" />
+								</div>
+								<div class="field half">
+									<input type="text" aria-label="fone" name="fone" id="fone" placeholder="Telefone Ex.: 27999999999" />
+								</div>
+								<div class="field half">
+									<select name="wpp" id="wpp">
 									  <option value="default" disabled selected>WhatsApp nesse número?</option>
 									  <option value="sim">Sim</option>
 									  <option value="nao">Não</option>

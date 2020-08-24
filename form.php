@@ -47,5 +47,5 @@ if (!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
     echo 'Message sent!';
-    header('Location: https://jeimesantana.com.br/');
+    header('Location: http://lfseguranca.com.br/');
 }
