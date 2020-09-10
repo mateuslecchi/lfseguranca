@@ -29,9 +29,9 @@ $mail->Username = $emailAc;
 //Password to use for SMTP authentication
 $mail->Password = $emailPass;
 //Set who the message is to be sent from
-$mail->setFrom($emailSent, 'Jeime Santana');
+$mail->setFrom($emailSent, 'LF Segurança e Engenharia Ocupacional');
 //Set who the message is to be sent to
-$mail->addAddress($emailRec, 'Jeime Santana');
+$mail->addAddress($emailRec, 'LF Segurança e Engenharia Ocupacional');
 //Set the subject line
 $mail->Subject = 'Contato de '.utf8_decode($_POST['name']);
 //Read an HTML message body from an external file, convert referenced images to embedded,
