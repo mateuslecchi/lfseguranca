@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>LF Segurança</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Qualidade, competência e compromisso! Segurança do trabalho e Engenharia Ocupacional. Entre em contato!">
+		<meta name="keywords" content="segurança,trabalho,engenharia Ocupacional, Segurança do trabalho">
+		<meta name="author" content="LF Segurança">
+		<meta name="theme-color" content="#ff6600"/>
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" href="images/icon.png" type="image/png">
+		<link rel="apple-touch-icon" href="images/logo_apple.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<img src="images/logo.png" alt="Logo LF Segurança">
+				<nav>
+					<ul>
+						<li><a href="https://lfseguranca.com.br/#inicio">Início</a></li>
+						<li><a href="https://lfseguranca.com.br/#quemsomos">Quem Somos</a></li>
+						<li><a href="https://lfseguranca.com.br/#servicos">Serviços</a></li>
+						<li><a href="https://lfseguranca.com.br/#treinamentos">Treinamentos e Palestras</a></li>
+						<li><a href="https://lfseguranca.com.br/duvidas-frequentes">Dúvidas Frequentes</a></li>
+						<li><a href="https://lfseguranca.com.br/#blog">Blog</a></li>
+						<li><a href="https://lfseguranca.com.br/#contato">Contato</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- inicio -->
+			<section id="inicio" class="main style1 dark fullscreen">
+				<div class="content">
+					<header>
+						<h2>Olá!</h2>
+					</header>
+					<p>Seja bem-vindo(a) à <strong>LF Segurança e Engenharia Ocupacional,</strong> segurança do trabalho é <strong>essencial!</strong><br />
+					<strong>Conheça</strong> nossos <strong>serviços!</strong></p>
+					<footer>
+						<a href="#quemsomos" class="button style2 down">Mais</a>
+					</footer>
+				</div>
+			</section>
+
+		
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon far fa-envelope fa-2x" aria-label="e-mail"><span class="label">e-mail</span></a></li>
+						<li><a href="#" class="icon brands fa-whatsapp fa-2x" aria-label="WhatsApp"><span class="label">WhatsApp</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f fa-2x" aria-label="Facebook"><span class="label">Facebook</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Monteiro & Mantovani Segurança Ocupacional </li>
+						<li> CNPJ: 033.979.026/0001-82</li>
+						<li>Design: <a href="https://agenciaink.com/" target="_blank" rel="noopener">Agência INK</a></li>
+						<!--li>Tema: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li-->
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				// This is the "Offline page" service worker
+
+				// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+				// Check compatibility for the browser we're running this in
+				if ("serviceWorker" in navigator) {
+				if (navigator.serviceWorker.controller) {
+					console.log("[PWA Builder] active service worker found, no need to register");
+				} else {
+					// Register the service worker
+					navigator.serviceWorker
+					.register("pwabuilder-sw.js", {
+						scope: "./"
+					})
+					.then(function (reg) {
+						console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+					});
+				}
+				}
+
+			</script>
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130165633-6"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-130165633-6');
+			</script>
+	</body>
+</html>
