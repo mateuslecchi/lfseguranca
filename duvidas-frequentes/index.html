@@ -12,18 +12,28 @@
 		<meta name="keywords" content="segurança,trabalho,engenharia Ocupacional, Segurança do trabalho">
 		<meta name="author" content="LF Segurança">
 		<meta name="theme-color" content="#ff6600"/>
-		<link rel="manifest" href="manifest.json">
-		<link rel="icon" href="images/icon.png" type="image/png">
-		<link rel="apple-touch-icon" href="images/logo_apple.png">
+		<link rel="manifest" href="../manifest.json">
+		<link rel="icon" href="../images/icon.png" type="image/png">
+		<link rel="apple-touch-icon" href="../images/logo_apple.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+		<style>
+			.pergunta {
+			  width: 100%;
+			  display: none;
+			}
+			hr{
+				border: 0px;;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<img src="images/logo.png" alt="Logo LF Segurança">
+				<img src="../images/logo.png" alt="Logo LF Segurança">
 				<nav>
 					<ul>
 						<li><a href="https://lfseguranca.com.br/#inicio">Início</a></li>
@@ -41,13 +51,21 @@
 			<section id="inicio" class="main style1 dark fullscreen">
 				<div class="content">
 					<header>
-						<h2>Olá!</h2>
+						<h2>Dúvidas Frequentes</h2>
 					</header>
 					<p>Seja bem-vindo(a) à <strong>LF Segurança e Engenharia Ocupacional,</strong> segurança do trabalho é <strong>essencial!</strong><br />
 					<strong>Conheça</strong> nossos <strong>serviços!</strong></p>
-					<footer>
-						<a href="#quemsomos" class="button style2 down">Mais</a>
-					</footer>
+					<p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+
+					<button onclick="myFunction_p1()">Pergunta 1Pergunta 1Pergunta 1Pergunta 1Pergunta 1Pergunta 1Pergunta 1Pergunta 1Pergunta 1</button>
+					<div class="pergunta" id="p1">
+					This is my DIV element.
+					</div>
+					<hr>
+					<button onclick="myFunction_p2()">Pergunta 2Pergunta 2Pergunta 2Pergunta 2Pergunta 2Pergunta 2Pergunta 2Pergunta 2Pergunta 2Pergunta 2Pergunta 2</button>
+					<div class="pergunta" id="p2">
+					This is my DIV element.
+					</div>
 				</div>
 			</section>
 
@@ -74,14 +92,14 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.poptrox.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 			<script>
 				// This is the "Offline page" service worker
@@ -115,5 +133,25 @@
 
 			gtag('config', 'UA-130165633-6');
 			</script>
+
+			<script>
+				function myFunction_p1() {
+				var x = document.getElementById("p1");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+				}
+				function myFunction_p2() {
+				var x = document.getElementById("p2");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+				}
+				
+				</script>
 	</body>
 </html>
