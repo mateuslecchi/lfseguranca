@@ -4,6 +4,8 @@ require 'assets/phpmailer/src/Exception.php';
 require 'assets/phpmailer/src/PHPMailer.php';
 require 'assets/phpmailer/src/SMTP.php';
 
+var_dump($_POST['name']);
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
