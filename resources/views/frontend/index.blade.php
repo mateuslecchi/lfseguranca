@@ -9,18 +9,21 @@
     <meta name="author" content="LF Segurança">
     <meta name="theme-color" content="#ff6600" />
     <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="images/icon.png" type="image/png">
-    <link rel="apple-touch-icon" href="images/logo_apple.png">
+    <link rel="icon" href="storage/images/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="storage/images/logo_apple.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+    <noscript>
+        <link rel="stylesheet" href="{{ asset('css/noscript.css') }}" />
+    </noscript>
+
 </head>
 
 <body class="is-preload">
 
     <!-- Header -->
     <header id="header">
-        <img src="images/logo.png" alt="Logo LF Segurança">
+        <img src="storage/images/logo.png" alt="Logo LF Segurança">
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -41,7 +44,8 @@
                 <h2>Olá!</h2>
             </header>
             <p>Seja bem-vindo(a) à <strong>LF Segurança e Engenharia Ocupacional,</strong> segurança do trabalho é <strong>essencial!</strong><br />
-                <strong>Conheça</strong> nossos <strong>serviços!</strong></p>
+                <strong>Conheça</strong> nossos <strong>serviços!</strong>
+            </p>
             <footer>
                 <a href="#quemsomos" class="button style2 down">Mais</a>
             </footer>
@@ -152,9 +156,27 @@
                 <h2>Fale conosco!</h2>
                 <p>Atendemos via e-mail e WhatsApp e nossa seção de <a href="/duvidas-frequentes/">Dúvidas Frequentes</a></p>
                 <ul class="icons">
-                    <li><a href="#" class="icon far fa-envelope fa-2x" aria-label="e-mail"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon brands fa-whatsapp fa-2x" aria-label="WhatsApp"><span class="label">WhatsApp</span></a></li>
-                    <li><a href="/duvidas-frequentes/" class="icon far fa-question-circle fa-2x" aria-label="WhatsApp"><span class="label">Dúvidas Frequentes</span></a></li>
+                    <li>
+                        <a href="#" class="" aria-label="e-mail">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/duvidas-frequentes/" class="" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
                 <p>Ou, preencha o formulário abaixo!</p>
             </header>
@@ -162,10 +184,10 @@
                 <form method="post" action="form.php">
                     <div class="fields">
                         <div class="field half">
-                            <input type="text" aria-label="name" name="name" id="name" placeholder="Nome" required/>
+                            <input type="text" aria-label="name" name="name" id="name" placeholder="Nome" required />
                         </div>
                         <div class="field half">
-                            <input type="text" aria-label="email" name="email" id="email" placeholder="Email" required/>
+                            <input type="text" aria-label="email" name="email" id="email" placeholder="Email" required />
                         </div>
                         <div class="field half">
                             <input type="text" aria-label="empresa" name="empresa" id="empresa" placeholder="Nome da Empresa (Opcional)" />
@@ -174,28 +196,28 @@
                             <input type="text" aria-label="cnpj" name="cnpj" id="cnpj" placeholder="CNPJ (Opcional)" />
                         </div>
                         <div class="field half">
-                            <input type="text" aria-label="fone" name="fone" id="fone" placeholder="Telefone Ex.: 27999999999" required/>
+                            <input type="text" aria-label="fone" name="fone" id="fone" placeholder="Telefone Ex.: 27999999999" required />
                         </div>
                         <div class="field half">
                             <select name="wpp" id="wpp">
-									  <option value="default" disabled selected>WhatsApp nesse número?</option>
-									  <option value="sim">Sim</option>
-									  <option value="nao">Não</option>
-									</select>
+                                <option value="default" disabled selected>WhatsApp nesse número?</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
                         </div>
                         <div class="field">
                             <select name="service" id="service">
-									  <option value="default" disabled selected>Para qual serviço busca atendimento?</option>
-									  <option value="PPRA - Programa De Prevenção de Riscos Ambientais ">PPRA - Programa De Prevenção de Riscos Ambientais </option>
-									  <option value="PCMSO - Programa de Controle Médico de Saúde Ocupacional">PCMSO - Programa de Controle Médico de Saúde Ocupacional</option>
-									  <option value="PGR - Programa de Gerenciamento de Riscos ">PGR - Programa de Gerenciamento de Riscos </option>
-									  <option value="PCA - Programa de Conservação Auditiva  ">PCA - Programa de Conservação Auditiva  </option>
-									  <option value="PPR - Programa de Proteção Respiratória ">PPR - Programa de Proteção Respiratória </option>
-									  <option value="LTCAT - Laudo Técnico das condições do Ambiente de Trabalho ">LTCAT - Laudo Técnico das condições do Ambiente de Trabalho </option>
-									  <option value="PCMAT - Programa de Condições e Meio Ambiente de Trabalho na Indústria">PCMAT - Programa de Condições e Meio Ambiente de Trabalho na Indústria</option>
-									  <option value="Avaliações Ambientais (Ruído, Poeira, Fumos Metálicos, Gases, Vapores Orgânicos, Calor, Vibração, Iluminância e outros agentes)">Avaliações Ambientais (Ruído, Poeira, Fumos Metálicos, Gases, Vapores Orgânicos, Calor, Vibração, Iluminância e outros agentes)</option>
-									  <option value="outros">Outros</option>
-									</select>
+                                <option value="default" disabled selected>Para qual serviço busca atendimento?</option>
+                                <option value="PPRA - Programa De Prevenção de Riscos Ambientais ">PPRA - Programa De Prevenção de Riscos Ambientais </option>
+                                <option value="PCMSO - Programa de Controle Médico de Saúde Ocupacional">PCMSO - Programa de Controle Médico de Saúde Ocupacional</option>
+                                <option value="PGR - Programa de Gerenciamento de Riscos ">PGR - Programa de Gerenciamento de Riscos </option>
+                                <option value="PCA - Programa de Conservação Auditiva  ">PCA - Programa de Conservação Auditiva </option>
+                                <option value="PPR - Programa de Proteção Respiratória ">PPR - Programa de Proteção Respiratória </option>
+                                <option value="LTCAT - Laudo Técnico das condições do Ambiente de Trabalho ">LTCAT - Laudo Técnico das condições do Ambiente de Trabalho </option>
+                                <option value="PCMAT - Programa de Condições e Meio Ambiente de Trabalho na Indústria">PCMAT - Programa de Condições e Meio Ambiente de Trabalho na Indústria</option>
+                                <option value="Avaliações Ambientais (Ruído, Poeira, Fumos Metálicos, Gases, Vapores Orgânicos, Calor, Vibração, Iluminância e outros agentes)">Avaliações Ambientais (Ruído, Poeira, Fumos Metálicos, Gases, Vapores Orgânicos, Calor, Vibração, Iluminância e outros agentes)</option>
+                                <option value="outros">Outros</option>
+                            </select>
                         </div>
                         <div class="field"><textarea name="message" aria-label="Mensagem" placeholder="Mensagem" rows="4" required></textarea></div>
                     </div>
@@ -228,36 +250,14 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <script>
-        // This is the "Offline page" service worker
-
-        // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-
-        // Check compatibility for the browser we're running this in
-        if ("serviceWorker" in navigator) {
-            if (navigator.serviceWorker.controller) {
-                console.log("[PWA Builder] active service worker found, no need to register");
-            } else {
-                // Register the service worker
-                navigator.serviceWorker
-                    .register("pwabuilder-sw.js", {
-                        scope: "./"
-                    })
-                    .then(function(reg) {
-                        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-                    });
-            }
-        }
-    </script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.poptrox.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.scrolly.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.scrollex.min.js') }}"></script>
+    <script src="{{ asset('js/browser.min.js') }}"></script>
+    <script src="{{ asset('js/breakpoints.min.js') }}"></script>
+    <script src="{{ asset('js/util.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130165633-6"></script>
